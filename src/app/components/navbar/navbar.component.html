@@ -1,0 +1,25 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <a class="navbar-brand title" routerLink="/">PelisUcompensar</a>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto"></ul>
+    <div class="d-flex">
+      <form class="form-inline my-2 my-lg-0">
+        <input
+          #txtBuscar
+          (keyup.enter)="buscarPelicula(txtBuscar.value)"
+          class="form-control mr-sm-2"
+          type="search"
+          placeholder="Buscar Pelicula"
+          aria-label="Search"
+        />
+        <button (click)="buscarPelicula(txtBuscar.value)" class="btn btn-outline-success my-2 my-sm-0" type="submit">
+          Buscar
+        </button>
+        <button routerLink="contactos" class="btn btn-outline-success my-2 my-sm-0" type="submit">
+          Contactos
+        </button>
+      </form>
+    </div>
+  </div>
+</nav>

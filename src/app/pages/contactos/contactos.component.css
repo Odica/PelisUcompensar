@@ -1,0 +1,13 @@
+.miclase{
+    display: grid;
+    
+}
+
+.inline{
+    display: flex;
+    margin: 1rem;
+ 
+}
+
+.inline img{
+    margin-right: 1rem;}
